@@ -20,7 +20,7 @@ const puppeteer = require('puppeteer');
 
     console.log("Scrolled");
 
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout?.(5000) ?? new Promise(r => setTimeout(r, 5000));
     await browser.close();
     console.log("Browser closed");
   } catch (error) {
