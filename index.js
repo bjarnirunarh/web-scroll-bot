@@ -8,7 +8,7 @@ const puppeteer = require('puppeteer');
     });
 
     const page = await browser.newPage();
-    await page.goto('https://www.mbl.is/fasteignir/fasteign/1520138/', {
+    await page.goto('https://www.mbl.is/fasteignir/fasteign/1525184/', {
       waitUntil: 'networkidle2',
     });
 
